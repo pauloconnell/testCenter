@@ -1,0 +1,274 @@
+body {
+  display: grid;
+ position: relative;
+ height: 100vh;
+ margin: 0;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/skiier.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  /* Adjust the opacity as needed */
+  z-index: -1;
+  /* Ensures the background is behind other content */
+}
+
+h1 {
+  font-size: 45px;
+  color: black;
+  background: rgba(169, 169, 169, 0.8);
+  box-shadow: 10px 10px 8px #3a3b3c;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 45px;
+  color: red;
+  background-color: black;
+  border-radius: 20px;
+  min-width: 50px;
+}
+
+h3 {
+  font-size: 45px;
+  color: red;
+  background: rgba(0, 5, 10, 0.8);
+  border-radius: 20px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.btnTab {
+
+  border-radius: 20px;
+  text-align: center;
+  color: gold;
+}
+
+.btn-primary {
+  border-radius: 10px;
+  min-width: 50px;
+  justify-content: center;
+}
+
+.bold {
+  font-size: 22px;
+  color: red;
+  background-color: rgba(0, 0, 0, .9);
+  padding: 4px;
+}
+
+.links {
+  color: red;
+}
+
+.detailWindow {
+  font-size: 20px;
+  border: solid;
+  width: 100%;
+  border-radius: 20px;
+  align-items: center;
+  background: rgba(169, 169, 169, 0.8);
+}
+
+.linkImg {
+  border: solid;
+  border-radius: 5px;
+  height: 70px;
+}
+
+.myGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.myGrid2 {
+  margin: auto;
+}
+
+.moveSB {
+  position: relative;
+  left: 20%;
+
+}
+
+.moveSki {
+  position: relative;
+  left: 20%;
+}
+
+.small {
+  font-size: 15px;
+}
+
+#testCenter {
+  font-size: 60px;
+
+}
+
+#gold {
+  background: rgba(0, 5, 10, 0.8);
+  color: gold;
+  border-radius: 20px;
+  max-width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#label {
+  margin: 50px;
+  text-align: center;
+}
+
+#label:hover tooltiptext {
+  visibility: visible;
+}
+
+#colLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+#finder {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#mainTitle {
+  background-color: black;
+  font-size: 75px;
+}
+
+#menu {
+  position: fixed;
+  font-size: 18px;
+  flex-wrap: wrap;
+  color: black;
+  min-width: 160px;
+  top: 0px;
+  left: 0px;
+  width: 20%;
+  height: 100%;
+  border-right: solid;
+  border-color: red;
+}
+
+#mainScreen {
+  width: 95%;
+  margin: 0px auto;
+}
+
+#content {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+}
+
+
+#wbImage {
+  opacity: .9;
+  width: 90%;
+  max-width: 800px;
+  height: 83px;
+  border-radius: 5px;
+  margin: 35px;
+}
+
+
+
+
+@media only screen and (max-width: 420px) and (min-width: 200px) {
+
+  /* CSS that should be displayed if width is equal to or less than 991px and larger 
+    than 768px goes here */
+  body {
+    background-size: 225%;
+  }
+
+  .btn-primary {
+    height: 40px;
+  }
+
+  .linkImg {
+    height: 40px;
+  }
+
+  .detailWindow {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 420px) {
+
+  /* CSS that should be displayed if width is equal to or less than 991px and larger 
+    than 768px goes here */
+  body {
+    background-size: 150%;
+  }
+
+  .linkImg {
+    height: 50px;
+  }
+
+  .btn-primary {
+    height: 50px;
+  }
+
+  .detailWindow {
+    width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1020px) {
+
+  /* CSS that should be displayed if width is equal to or less than 991px goes here */
+  body {
+    background-size: 100%
+  }
+
+  .linkImg {
+    height: 55px;
+  }
+
+  .btn-primary {
+    height: 55px;
+  }
+
+  .detailWindow {
+    width: 80%;
+  }
+
+
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 1200px) {
+  body {
+    background-size: 100%;
+  }
+
+  .linkImg {
+    height: 75px;
+  }
+
+  .btn-primary {
+    height: 60px;
+  }
+}

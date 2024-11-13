@@ -11,7 +11,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 300%;
   background-image: url('../images/skiier.png');
   background-attachment: fixed;
   background-position: center;
@@ -83,6 +83,10 @@ button:hover {
   border-radius: 20px;
   align-items: center;
   background: rgba(169, 169, 169, 0.8);
+}
+
+.detailWindow .btn-primary {
+  margin: 10px;
 }
 
 .iframeContainer {

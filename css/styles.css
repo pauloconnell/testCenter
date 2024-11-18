@@ -141,7 +141,7 @@ button:hover {
 }
 
 #gold {
-  background: rgba(0, 5, 10, 0.8);
+  background: rgba(0, 5, 10, 0.99);
   color: gold;
   border-radius: 20px;
   max-width: 500px;
